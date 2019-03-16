@@ -41,4 +41,4 @@ However, only the second message should be visible from a consumer with `read_co
 Because no exception was thrown, the loss of the first message is *silent*.
 
 1. Comment the line containing `message2Partition = 1` to publish both messages to the same partition of the topic.  
-This time, the application should throw an exception `org.apache.kafka.common.errors.InvalidTxnStateException`` on `commitTransaction()`.
+This time, the application should throw an exception `org.apache.kafka.common.errors.InvalidTxnStateException` on `commitTransaction()`.
